@@ -5,21 +5,21 @@
 class Pipeci < Formula
   desc "CLI Program for CI/CD Pipeline execution."
   homepage ""
-  version "0.0.2"
+  version "0.0.3"
   license "Unlicense"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/CS6510-SEA-SP25/t3-cicd/releases/download/v0.0.2/pipeci_Darwin_x86_64.tar.gz"
-      sha256 "0a5b6234bed2ce1a41abe9377b4701def9851ea2ac7de778dfb1c3a4cfa4917f"
+      url "https://github.com/CS6510-SEA-SP25/t3-cicd/releases/download/v0.0.3/pipeci_Darwin_x86_64.tar.gz"
+      sha256 "adbe1d11f3c33046516f5b79afd482cd7aa9911c0fb88320bacca30bc0bfd007"
 
       def install
         bin.install pipeci
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/CS6510-SEA-SP25/t3-cicd/releases/download/v0.0.2/pipeci_Darwin_arm64.tar.gz"
-      sha256 "6ab696054827d10dc8dad1d40e78d0f450f5692c562056fe1374568e2aabf268"
+      url "https://github.com/CS6510-SEA-SP25/t3-cicd/releases/download/v0.0.3/pipeci_Darwin_arm64.tar.gz"
+      sha256 "6fb4ccd1b20bfd306f9a504b74b1fe5fb99613fc60a3c3d083289d3c3d65cdf4"
 
       def install
         bin.install pipeci
@@ -30,8 +30,8 @@ class Pipeci < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/CS6510-SEA-SP25/t3-cicd/releases/download/v0.0.2/pipeci_Linux_x86_64.tar.gz"
-        sha256 "6dc5ca455921e7b2c8bc6a732352e200d666d09d9a0a3675c6b604252df70bae"
+        url "https://github.com/CS6510-SEA-SP25/t3-cicd/releases/download/v0.0.3/pipeci_Linux_x86_64.tar.gz"
+        sha256 "8def529a3717e279edc5b4f0b9d5375dd394b36ad931f9723b688b458ac5b9d2"
 
         def install
           bin.install pipeci
@@ -40,8 +40,8 @@ class Pipeci < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/CS6510-SEA-SP25/t3-cicd/releases/download/v0.0.2/pipeci_Linux_arm64.tar.gz"
-        sha256 "23fc143d7c80293d286345c86a59e7d4199ae5ff8d6e139cdbc59a75f568f2e7"
+        url "https://github.com/CS6510-SEA-SP25/t3-cicd/releases/download/v0.0.3/pipeci_Linux_arm64.tar.gz"
+        sha256 "76575084aa418a0401708027c76a3ce1abd52556a6e59ca6c7cb11d9795ecb00"
 
         def install
           bin.install pipeci
